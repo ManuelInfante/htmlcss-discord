@@ -4,3 +4,115 @@
     box-sizing: border-box;
 }
 
+/* COMMON */
+body{
+    font-family: Whitney,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+.clearfix{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.float_sx{
+    float: left;
+}
+
+.float_dx{
+    float: right;
+}
+
+/* COLORI SFONDI E TESTI */
+
+.white_bg{
+    background-color: white;
+}
+
+.darkgray_bg{
+    background-color: #363A3E;
+}
+
+.lilac_bg{
+    background-color: violet;
+}
+/* / COLORI SFONDI E TESTI */
+
+  /* BUTTON STYLE */
+
+    .button_style{
+        border: 1px solid;
+        border-radius: 25px;
+        font-size: 15px;
+        border: none;
+    }
+
+    .button_style > a{
+        text-decoration: none;
+    }
+
+    .button_style.white_bg >a{
+        color: black;
+    }
+
+    .button_style.darkgray_bg, .button_style.lilac.bg  >a{
+        color: white;
+    }
+
+    button.small{
+        font-size: 15px;
+        padding: 3% 4%;
+    }
+    /* BUTTON STYLE */
+
+/* /COMMON */
+
+/* LOGO + MENU + LOGIN */
+header{
+    background-color: #404eed;
+}
+
+header > .container{
+    height: 70px;
+}
+
+header >  div{
+    text-align: center;
+    line-height: 70px;
+}
+
+header .container > .small{
+    width: calc(100% / 4);
+}
+    /* LOGO */
+    header .logo img{
+        height: 50%;
+        vertical-align: middle;
+    }
+    /* /LOGO */
+
+    /* MENU */
+    nav{
+        width: calc((100% / 4) * 2);
+    }
+
+    header nav ul li{
+        display: inline-block;
+        list-style: none;
+        font-size: 15px;
+        padding: 0 15px;
+    }
+
+    header nav ul li a{
+        color: white;
+        text-decoration: none;
+    }
+    /* / MENU */
+
+/* / LOGO + MENU + LOGIN */
+
