@@ -41,6 +41,10 @@ body{
 .lilac_bg{
     background-color: violet;
 }
+
+.white_text{
+    color: white;
+}
 /* / COLORI SFONDI E TESTI */
 
   /* BUTTON STYLE */
@@ -60,17 +64,29 @@ body{
         color: black;
     }
 
-    .button_style.darkgray_bg, .button_style.lilac.bg  >a{
+    .button_style.darkgray_bg > a, .button_style.lilac.bg  >a{
         color: white;
     }
 
     button.small{
-        font-size: 15px;
-        padding: 3% 4%;
+        font-size: 1vw;
+        padding: 4% 4%;
+    }
+
+    button.big{
+        font-size: 1.3vw;
+        padding: 2% 4%;
+    }
+
+    button.download:before{
+        font-family: "Font Awesome 5 free";
+        content: "\f309";
+        font-weight: 600;
+        margin: 0 5px;
     }
     /* BUTTON STYLE */
 
-/* /COMMON */
+/* / COMMON */
 
 /* LOGO + MENU + LOGIN */
 header{
@@ -116,3 +132,46 @@ header .container > .small{
 
 /* / LOGO + MENU + LOGIN */
 
+/* HERO SECTION */
+section.banner_top{
+    background-image: url("../img/jumbo.png");
+    background-size: cover;
+    background-position: center;
+    height: 65vh;
+}
+
+section.banner_top > .container{
+    height: 100%;
+    position: relative;
+}
+
+section .banner_content_box{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    padding-bottom: 3%;
+}
+
+.banner_text_box > h1{
+    font-size: 4vw;
+    padding-bottom: 5%;
+}
+
+.banner_text_box > p{
+    font-weight: 500;
+    line-height: 4vh;
+}
+
+.banner_button_box{
+    margin-top: 4%;
+}
+
+.banner_button_box > button:first-child{
+    margin-right: 5%;
+}
+
+/* / HERO SECTION */
