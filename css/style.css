@@ -14,7 +14,7 @@ body{
     margin: auto;
 }
 
-.clearfix{
+.clearfix:after{
     content: "";
     display: table;
     clear: both;
@@ -49,6 +49,10 @@ body{
 .white_text{
     color: white;
 }
+
+.lilac_text{
+    color: #8FA2E1;
+}
 /* / COLORI SFONDI E TESTI */
 
   /* BUTTON STYLE */
@@ -58,6 +62,11 @@ body{
         border-radius: 25px;
         font-size: 15px;
         border: none;
+        transition: transform .4s;
+    }
+
+    .button_style:hover{
+        transform: scale(1.1);
     }
 
     .button_style > a{
@@ -74,7 +83,7 @@ body{
 
     button.small{
         font-size: 1vw;
-        padding: 4% 4%;
+        padding: 10px 15px;
     }
 
     button.big{
@@ -135,6 +144,10 @@ header .container > .small{
     header nav ul li a{
         color: white;
         text-decoration: none;
+    }
+
+    header nav ul li a:hover{
+        text-decoration: underline;
     }
     /* / MENU */
 
@@ -254,4 +267,84 @@ section.banner_bottom .banner_button button.download{
 }
 
 /* / BANNER FINALE + CTA */
+
+/* FOOTER */
+
+footer > .container > .footer_top{
+    padding: 7% 0 3%;
+}
+
+footer .big.column{
+    width: calc((100% / 6) * 2);
+    padding-right: 10%;
+}
+
+footer .big.column > h3{
+    font-size: 2vw;
+}
+
+footer .chose_lang_box{
+    padding: 5% 0;
+}
+
+footer #flag_img{
+    display: inline-block;
+}
+
+footer #flag_img > img{
+    height: 15px;
+}
+
+footer .chose_lang_box a{
+    text-decoration: none;
+}
+
+footer .chose_lang_box a:hover{
+    text-decoration: underline;
+}
+
+footer .chose_lang_box > span:first-child{
+    text-align: left;
+}
+
+footer .social_icon_box > span{
+    margin-right: 15px;
+}
+
+/* SMALL COLUMN */
+
+footer .small.column{
+    width: calc(100% / 6);
+    padding-top: 1%;
+}
+
+footer ul > li{
+    list-style: none;
+}
+
+footer ul > li > a{
+    line-height: 5vh;
+    text-decoration: none;
+}
+
+footer ul > li > a:not(.liliac_text){
+    color: white
+}
+
+footer ul > li > a:not(.liliac_text):hover{
+    text-decoration: underline;
+}
+/* / SMALL COLUMN */
+
+footer  hr{
+    border-color: #8FA2E1;
+}
+
+footer section.footer_bottom{
+    padding: 3% 0 8%;
+}
+
+/* / FOOTER */
+
+
 
