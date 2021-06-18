@@ -34,6 +34,10 @@ body{
     background-color: white;
 }
 
+.gray_bg{
+    background-color: #F6F6F6;
+}
+
 .darkgray_bg{
     background-color: #363A3E;
 }
@@ -175,3 +179,33 @@ section .banner_content_box{
 }
 
 /* / HERO SECTION */
+
+/* SLIDE REGOLE GENERALI*/
+
+section.slide{
+    padding: 5% 0;
+}
+
+div > .img_box{
+    width: calc((100% / 3) * 2);
+}
+
+div > .text_box{
+    width: calc(100% / 3);
+}
+
+div.text_box{
+    padding: 3%;
+}
+
+div.text_box > h2{
+    font-size: 3vw;
+}
+
+div.text_box > p{
+    margin-top: 10%;
+    font-size: 1.2vw;
+    line-height: 4vh;
+}
+
+/* / SLIDE 1 */
