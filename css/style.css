@@ -43,7 +43,7 @@ body{
 }
 
 .lilac_bg{
-    background-color: violet;
+    background-color: #8FA2E1;
 }
 
 .white_text{
@@ -68,7 +68,7 @@ body{
         color: black;
     }
 
-    .button_style.darkgray_bg > a, .button_style.lilac.bg  >a{
+    .button_style.darkgray_bg > a, .button_style.lilac_bg > a{
         color: white;
     }
 
@@ -79,7 +79,7 @@ body{
 
     button.big{
         font-size: 1.3vw;
-        padding: 2% 4%;
+        padding: 12px 25px;
     }
 
     button.download:before{
@@ -87,6 +87,10 @@ body{
         content: "\f309";
         font-weight: 600;
         margin: 0 5px;
+    }
+
+    button.download.lilac_bg:before{
+        color: white;
     }
     /* BUTTON STYLE */
 
@@ -186,11 +190,11 @@ section.slide{
     padding: 5% 0;
 }
 
-div > .img_box{
+.slide .img_box{
     width: calc((100% / 3) * 2);
 }
 
-div > .text_box{
+.slide .text_box{
     width: calc(100% / 3);
 }
 
@@ -198,7 +202,7 @@ div.text_box{
     padding: 3%;
 }
 
-div.text_box > h2{
+div.text_box > h2, .banner_bottom h2{
     font-size: 3vw;
 }
 
@@ -208,4 +212,46 @@ div.text_box > p{
     line-height: 4vh;
 }
 
-/* / SLIDE 1 */
+/* / SLIDE REGOLE GENERALI*/
+
+/* BANNER FINALE + CTA */
+
+section.banner_bottom{
+    text-align: center;
+    padding: 5%;
+}
+
+section.banner_bottom .img_box > img{
+    width: 100%;
+    margin: 2vh;
+}
+
+section.banner_bottom p{
+    font-size: 1.2vw;
+    line-height: 4vh;
+    font-weight: 500;
+    margin-top: 3vh;
+}
+
+section.banner_bottom .banner_button{
+    position: relative;
+    padding: 3%;
+}
+
+.stars_layover{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+section.banner_bottom .banner_button > h3{
+    font-size: 1.5vw;
+}
+
+section.banner_bottom .banner_button button.download{
+    margin-top: 5vh;
+}
+
+/* / BANNER FINALE + CTA */
+
