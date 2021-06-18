@@ -1,0 +1,403 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* COMMON */
+body{
+    font-family: Whitney,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+.clearfix:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.float_sx{
+    float: left;
+}
+
+.float_dx{
+    float: right;
+}
+
+/* COLORI SFONDI E TESTI */
+
+.white_bg{
+    background-color: white;
+}
+
+.gray_bg{
+    background-color: #F6F6F6;
+}
+
+.darkgray_bg{
+    background-color: #363A3E;
+}
+
+.lilac_bg{
+    background-color: #8FA2E1;
+}
+
+.white_text{
+    color: white;
+}
+
+.lilac_text{
+    color: #8FA2E1;
+}
+/* / COLORI SFONDI E TESTI */
+
+  /* BUTTON STYLE */
+
+    .button_style{
+        border: 1px solid;
+        border-radius: 25px;
+        font-size: 15px;
+        border: none;
+        transition: transform .4s;
+    }
+
+    .button_style:hover{
+        transform: scale(1.1);
+    }
+
+    .button_style > a{
+        text-decoration: none;
+    }
+
+    .button_style.white_bg >a{
+        color: black;
+    }
+
+    .button_style.darkgray_bg > a, .button_style.lilac_bg > a{
+        color: white;
+    }
+
+    button.small{
+        font-size: 1vw;
+        padding: 10px 15px;
+    }
+
+    button.big{
+        font-size: 1.3vw;
+        padding: 12px 25px;
+    }
+
+    button.download:before{
+        font-family: "Font Awesome 5 free";
+        content: "\f309";
+        font-weight: 600;
+        margin: 0 5px;
+    }
+
+    button.download.lilac_bg:before{
+        color: white;
+    }
+    /* BUTTON STYLE */
+
+/* / COMMON */
+
+/* LOGO + MENU + LOGIN */
+header{
+    background-color: #404eed;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+}
+
+header > .container{
+    height: 70px;
+}
+
+header >  div{
+    text-align: center;
+    line-height: 70px;
+}
+
+header .container > .small{
+    width: calc(100% / 4);
+}
+    /* LOGO */
+    header .logo img{
+        height: 50%;
+        vertical-align: middle;
+    }
+    /* /LOGO */
+
+    /* MENU */
+    nav{
+        width: calc((100% / 4) * 2);
+    }
+
+    header nav ul li{
+        display: inline-block;
+        list-style: none;
+        font-size: 15px;
+        padding: 0 15px;
+    }
+
+    header nav ul li a{
+        color: white;
+        text-decoration: none;
+    }
+
+    header nav ul li a:hover{
+        text-decoration: underline;
+    }
+    /* / MENU */
+
+/* / LOGO + MENU + LOGIN */
+
+/* HERO SECTION */
+section.banner_top{
+    background-image: url("../../img/jumbo.png");
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed;
+    height: 65vh;
+}
+
+section.banner_top > .container{
+    height: 100%;
+    position: relative;
+}
+
+section .banner_content_box{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    padding-bottom: 3%;
+}
+
+.banner_text_box > h1{
+    font-size: 4vw;
+    padding-bottom: 5%;
+}
+
+.banner_text_box > p{
+    font-weight: 500;
+    line-height: 4vh;
+}
+
+.banner_button_box{
+    margin-top: 4%;
+}
+
+.banner_button_box > button:first-child{
+    margin-right: 5%;
+}
+
+/* / HERO SECTION */
+
+/* SLIDE REGOLE GENERALI*/
+
+section.slide{
+    padding: 7% 0;
+}
+
+.slide .img_box{
+    width: calc((100% / 3) * 2);
+}
+
+.slide .text_box{
+    width: calc(100% / 3);
+}
+
+div.text_box{
+    padding: 3%;
+}
+
+div.text_box > h2, .banner_bottom h2{
+    font-size: 3vw;
+}
+
+div.text_box > p{
+    margin-top: 10%;
+    font-size: 1.2vw;
+    line-height: 4vh;
+}
+
+/* ONDE SLIDE GRIGIA */
+    .wave{
+        position: relative;
+    }
+
+    .wave:not(#two_waves):before{
+        content: "";
+        left: 0;
+        right: 0;
+        bottom:0;
+        position: absolute;
+        background-image: url("../../img/wave.svg");
+        background-size: cover;
+        background-position: center;
+        height: 10vh;
+        width: 100%;
+    }
+
+    #two_waves:before{
+        content: "";
+        top:0;
+        left: 0;
+        right: 0;
+        position: absolute;
+        transform:rotate(180deg);
+        background-image: url("../../img/wave.svg");
+        background-size: cover;
+        background-position: center;
+        height: 10vh;
+        width: 100%;
+    }
+
+    #two_waves:after{
+        content: "";
+        bottom:0;
+        left: 0;
+        right: 0;
+        position: absolute;
+        background-image: url("../../img/wave.svg");
+        background-size: cover;
+        background-position: center;
+        height: 10vh;
+        width: 100%;
+    }
+
+/* /ONDE SLIDE GRIGIA */
+
+/* / SLIDE REGOLE GENERALI*/
+
+/* BANNER FINALE + CTA */
+
+section.banner_bottom{
+    text-align: center;
+    padding: 5%;
+}
+
+section.banner_bottom .img_box > img{
+    width: 100%;
+    margin: 2vh;
+}
+
+section.banner_bottom p{
+    font-size: 1.2vw;
+    line-height: 4vh;
+    font-weight: 500;
+    margin-top: 3vh;
+}
+
+section.banner_bottom .banner_button{
+    position: relative;
+    padding: 3%;
+}
+
+.stars_layover{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+section.banner_bottom .banner_button > h3{
+    font-size: 1.5vw;
+}
+
+section.banner_bottom .banner_button button.download{
+    margin-top: 5vh;
+}
+
+/* / BANNER FINALE + CTA */
+
+/* FOOTER */
+
+footer > .container > .footer_top{
+    padding: 7% 0 3%;
+}
+
+footer .big.column{
+    width: calc((100% / 6) * 2);
+    padding-right: 10%;
+}
+
+footer .big.column > h3{
+    font-size: 2vw;
+}
+
+footer .chose_lang_box{
+    padding: 5% 0;
+}
+
+footer #flag_img{
+    display: inline-block;
+}
+
+footer #flag_img > img{
+    height: 15px;
+}
+
+footer .chose_lang_box a{
+    text-decoration: none;
+}
+
+footer .chose_lang_box a:hover{
+    text-decoration: underline;
+}
+
+footer .chose_lang_box > span:first-child{
+    text-align: left;
+}
+
+footer .social_icon_box > span{
+    margin-right: 15px;
+}
+
+/* SMALL COLUMN */
+
+footer .small.column{
+    width: calc(100% / 6);
+    padding-top: 1%;
+}
+
+footer ul > li{
+    list-style: none;
+}
+
+footer ul > li > a{
+    line-height: 5vh;
+    text-decoration: none;
+}
+
+footer ul > li > a:not(.liliac_text){
+    color: white
+}
+
+footer ul > li > a:not(.liliac_text):hover{
+    text-decoration: underline;
+}
+/* / SMALL COLUMN */
+
+footer  hr{
+    border-color: #8FA2E1;
+}
+
+footer section.footer_bottom{
+    padding: 3% 0 8%;
+}
+
+/* / FOOTER */
+
+
+
